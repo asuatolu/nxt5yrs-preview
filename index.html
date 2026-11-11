@@ -8,9 +8,9 @@
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:title" content="NXT5YRS Lagos · Website preview">
 <meta property="og:description" content="Not a virality chase. We architect relevance.">
-<meta property="og:image" content="img/m-field.webp">
+<meta property="og:image" content="img/moelogo-yoruba-healer-portrait-field.webp">
 <meta name="theme-color" content="#0D0912">
-<link rel="icon" href="img/logo-stack-yellow.png">
+<link rel="icon" href="img/nxt5yrs-lagos-logo-yellow.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
@@ -98,6 +98,13 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   .swipe-hint{display:flex;align-items:center;gap:10px;font:600 12px/1 var(--f-body);letter-spacing:.12em;color:#B3AABF}
   #gallery [style*="grid-auto-rows"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-auto-rows:150px !important;gap:10px !important}
 }
+.vmodal{border:0;padding:0;background:transparent;max-width:min(92vw,440px);width:100%}
+.vmodal::backdrop{background:rgba(13,9,18,.88);backdrop-filter:blur(6px)}
+.vmodal video{width:100%;max-height:82vh;border-radius:18px;background:#000;display:block}
+.vmodal .vclose{position:absolute;top:-52px;right:0;width:44px;height:44px;border-radius:50%;border:0;background:#FED70C;color:#0D0912;font:700 20px/1 var(--f-body);cursor:pointer}
+.vmodal .vtitle{color:#fff;font:800 18px/1.2 var(--f-display);margin:12px 4px 0}
+[data-artist].is-hidden{display:none}
+[data-filter]{transition:background .25s,color .25s,border-color .25s}
 </style>
 </head>
 <body>
@@ -108,7 +115,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   <!-- HEADER (smart header: hides on scroll down, returns on scroll up) -->
   <header style="position: sticky; top: 0; z-index: 20; background: rgba(13,9,18,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 2px solid #FED70C">
     <div style="max-width: 1320px; margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 28px">
-      <a href="#top" aria-label="NXT5YRS Lagos home" style="display: flex; margin-right: auto"><img src="img/logo-h-white.png" alt="NXT5YRS Lagos" style="height: 38px; width: auto; display: block"></a>
+      <a href="#top" aria-label="NXT5YRS Lagos home" style="display: flex; margin-right: auto"><img src="img/nxt5yrs-lagos-logo-horizontal-white.png" alt="NXT5YRS Lagos" style="height: 38px; width: auto; display: block"></a>
       <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 26px; font: 600 13px/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase">
         <a href="#roster" style="color: #ffffff">Roster</a>
         <a href="#watch" style="color: #ffffff">Watch</a>
@@ -126,22 +133,22 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
       <div style="display: flex; flex-direction: column; gap: 28px; min-width: 0">
         <p style="margin: 0; font: 600 12px/1.4 var(--f-body); letter-spacing: .22em; text-transform: uppercase; color: #C4952D">Global Talent &amp; Cultural Accelerator · Lagos</p>
         <div style="overflow: visible; padding-top: 8px">
-          <img src="img/logo-stack-yellow.png" alt="NXT5YRS Lagos" style="width: min(100%, 460px); height: auto; display: block; transform-origin: 50% 100%; animation: nx-bounce 1.1s var(--ease-out) .2s both">
+          <img src="img/nxt5yrs-lagos-logo-yellow.png" alt="NXT5YRS Lagos" style="width: min(100%, 460px); height: auto; display: block; transform-origin: 50% 100%; animation: nx-bounce 1.1s var(--ease-out) .2s both">
         </div>
         <h1 style="margin: 0; font: 800 clamp(34px, 4.4vw, 58px)/1.02 var(--f-display); letter-spacing: -.02em; text-wrap: balance">Not a virality chase. <span style="color: #FED70C">We architect relevance.</span></h1>
-        <p style="margin: 0; max-width: 54ch; font: 500 17px/1.65 var(--f-body); color: #B3AABF">We manage artists and creatives from Lagos to the world: PR, visibility, music campaigns and live shows, built around a five-year plan for each talent.</p>
+        <p style="margin: 0; max-width: 54ch; font: 500 17px/1.65 var(--f-body); color: #B3AABF">A culture and communications creative agency helping brands, founders, and creators build what people will care about next.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 14px">
           <a class="nx-btn nx-btn-y" href="mailto:socialprefect@nxt5yrs.com?subject=Consultation%20request" style="background: #FED70C; color: #0D0912; font: 700 15px/1 var(--f-body); padding: 18px 26px; border-radius: 999px">Book a consultation</a>
-          <a class="nx-btn nx-btn-o" href="#roster" style="border: 1.5px solid #ffffff; color: #ffffff; font: 700 15px/1 var(--f-body); padding: 17px 26px; border-radius: 999px">Meet the roster</a>
+          <a class="nx-btn nx-btn-o" href="#roster" style="border: 1.5px solid #ffffff; color: #ffffff; font: 700 15px/1 var(--f-body); padding: 17px 26px; border-radius: 999px">Meet the Talents</a>
         </div>
       </div>
       <div style="position: relative; min-height: 560px; min-width: 0">
         <a href="#moelogo" class="nx-lift" style="position: absolute; left: 0; top: 30px; width: 58%; aspect-ratio: 3/4; border-radius: 22px; overflow: hidden; transform: rotate(-4deg); box-shadow: 0 30px 60px rgba(0,0,0,.5); border: 3px solid #FED70C; display: block">
-          <img src="img/m-field.webp" alt="Moelogo standing in a golden field" style="width: 100%; height: 100%; object-fit: cover; display: block">
+          <img src="img/moelogo-yoruba-healer-portrait-field.webp" alt="Moelogo standing in a golden field" style="width: 100%; height: 100%; object-fit: cover; display: block">
           <span style="position: absolute; left: 14px; bottom: 14px; background: #0D0912; color: #ffffff; padding: 10px 14px; border-radius: 10px; font: 800 22px/1 var(--f-display)">MOELOGO<span style="display: block; font: 600 11px/1.4 var(--f-body); color: #FED70C; letter-spacing: .1em; margin-top: 4px">LIVE IN LAGOS · 20.12.26</span></span>
         </a>
         <a href="#zaanurty" class="nx-lift" style="position: absolute; right: 0; top: 190px; width: 52%; aspect-ratio: 4/5; border-radius: 22px; overflow: hidden; transform: rotate(5deg); box-shadow: 0 30px 60px rgba(0,0,0,.5); border: 3px solid #5B2E90; display: block">
-          <img src="img/z-red.webp" alt="zAA NurTy in a red leather jacket" style="width: 100%; height: 100%; object-fit: cover; display: block">
+          <img src="img/zaa-nurty-dangerous-red-leather-jacket.webp" alt="zAA NurTy in a red leather jacket" style="width: 100%; height: 100%; object-fit: cover; display: block">
           <span style="position: absolute; left: 14px; bottom: 14px; background: #0D0912; color: #ffffff; padding: 10px 14px; border-radius: 10px; font: 800 22px/1 var(--f-display)">zAA NurTy<span style="display: block; font: 600 11px/1.4 var(--f-body); color: #C8F23A; letter-spacing: .1em; margin-top: 4px">“DANGEROUS” OUT NOW</span></span>
         </a>
         <div aria-hidden="true" style="position: absolute; right: 22%; top: 0; width: 118px; height: 118px; border-radius: 50%; background: #FED70C; color: #0D0912; display: grid; place-items: center; text-align: center; font: 900 22px/.92 var(--f-display); animation: nx-rock 2.8s ease-in-out infinite">20.12<span style="display: block; font: 700 10px/1.2 var(--f-body); letter-spacing: .12em; margin-top: 4px">LAGOS · LIVE</span></div>
@@ -199,12 +206,12 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
     <article id="moelogo" style="position: sticky; top: 88px; max-width: 1320px; margin: 48px auto 0; padding: 0 32px">
       <div style="background: #2A1446; border-radius: 30px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); box-shadow: 0 -20px 60px rgba(0,0,0,.45)">
         <div style="position: relative; min-height: 560px">
-          <img src="img/m-stage.webp" alt="Moelogo performing on stage under purple light" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+          <img src="img/moelogo-live-on-stage-purple-lights.webp" alt="Moelogo performing on stage under purple light" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
           <span style="position: absolute; top: 20px; left: 20px; background: #FED70C; color: #0D0912; border-radius: 999px; padding: 8px 14px; font: 700 12px/1 var(--f-body); letter-spacing: .08em">01 · LIVE IN LAGOS</span>
         </div>
         <div style="padding: 44px; display: flex; flex-direction: column; gap: 22px; min-width: 0">
           <h3 style="margin: 0; font: 900 clamp(52px, 6vw, 92px)/.9 var(--f-display); letter-spacing: -.02em">MOELOGO</h3>
-          <p style="margin: 0; font: 500 16px/1.65 var(--f-body); color: #E3DAEE">The British-Nigerian singer-songwriter brings his debut album <em>Yorùbá Healer</em> home to Lagos for a live music and cultural evening, with guest performers and a merch pop-up.</p>
+          <p style="margin: 0; font: 500 16px/1.65 var(--f-body); color: #E3DAEE">The British-Nigerian singer-songwriter brings his debut album <em>Yorùbá Healer</em> home to Lagos for a live music and cultural evening, with guest performers and a merch pop-up. He also has four music credits on the film <em>Children of Blood and Bone</em>.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 10px" aria-label="Countdown to the show">
             <div style="background: #0D0912; border-radius: 14px; padding: 12px 16px; min-width: 76px; text-align: center"><b style="display: block; font: 900 38px/1 var(--f-display); color: #FED70C; font-variant-numeric: tabular-nums">40</b><small style="font: 600 10px/1.6 var(--f-body); letter-spacing: .12em">DAYS</small></div>
             <div style="background: #0D0912; border-radius: 14px; padding: 12px 16px; min-width: 76px; text-align: center"><b style="display: block; font: 900 38px/1 var(--f-display); color: #FED70C; font-variant-numeric: tabular-nums">06</b><small style="font: 600 10px/1.6 var(--f-body); letter-spacing: .12em">HOURS</small></div>
@@ -229,7 +236,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
             <a class="nx-btn nx-btn-o" href="https://www.instagram.com/moelogo" style="border: 1.5px solid rgba(255,255,255,.4); color: #ffffff; font: 700 15px/1 var(--f-body); padding: 16px 24px; border-radius: 999px">Instagram ↗</a>
           </div>
           <div style="display: flex; gap: 14px; align-items: center; border-top: 1px solid rgba(255,255,255,.14); padding-top: 18px">
-            <img src="img/m-album.webp" alt="Yorùbá Healer album cover" style="width: 64px; height: 64px; border-radius: 10px; object-fit: cover">
+            <img src="img/moelogo-yoruba-healer-album-cover.webp" alt="Yorùbá Healer album cover" style="width: 64px; height: 64px; border-radius: 10px; object-fit: cover">
             <p style="margin: 0; font: 500 14px/1.5 var(--f-body); color: #E3DAEE"><b style="color: #ffffff">New:</b> <em>Can Never Miss</em>, a six-track EP, out now. “Poseidon’s Love” was BBC Radio 1Xtra’s Track of the Week.</p>
           </div>
         </div>
@@ -250,12 +257,16 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
             <a class="nx-btn nx-btn-o" href="https://www.instagram.com/zaanurty/" style="border: 1.5px solid rgba(255,255,255,.4); color: #ffffff; font: 700 15px/1 var(--f-body); padding: 16px 24px; border-radius: 999px">Instagram ↗</a>
           </div>
           <a href="https://zaanurty.com/press" class="nx-zoom" style="margin-top: auto; display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center; background: rgba(0,0,0,.35); border-radius: 18px; padding: 12px; color: #ffffff">
-            <span style="width: 96px; height: 96px; border-radius: 12px; overflow: hidden; display: block"><img src="img/z-msbhv.webp" alt="MSBHV artwork, black and white" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+            <span style="width: 96px; height: 96px; border-radius: 12px; overflow: hidden; display: block"><img src="img/zaa-nurty-msbhv-artwork.webp" alt="MSBHV artwork, black and white" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
             <span style="font: 500 14px/1.5 var(--f-body)"><b style="display: block; font: 800 20px/1.1 var(--f-display)">MSBHV</b>Also in rotation. Black-and-white visual campaign.</span>
+          </a>
+          <a href="https://guardian.ng/art/zaa-nurtys-with-love-zaa-always-a-journey-through-life-love-and-lagos-rhythms/" class="nx-zoom" style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center; background: rgba(0,0,0,.35); border-radius: 18px; padding: 12px; color: #ffffff">
+            <span style="width: 96px; height: 96px; border-radius: 12px; overflow: hidden; display: block"><img src="img/zaa-nurty-with-love-zaa-always-album-cover.webp" alt="With Love, Zaa Always album cover: zAA NurTy in a vintage BMW" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+            <span style="font: 500 14px/1.5 var(--f-body)"><b style="display: block; font: 800 20px/1.1 var(--f-display)">With Love, Zaa Always</b>The project on life, love and Lagos rhythms.</span>
           </a>
         </div>
         <div style="position: relative; min-height: 560px">
-          <img src="img/z-dangerous-v.webp" alt="Dangerous single artwork: a glowing violet and lime eye" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+          <img src="img/zaa-nurty-dangerous-artwork.webp" alt="Dangerous single artwork: a glowing violet and lime eye" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
         </div>
       </div>
     </article>
@@ -273,10 +284,10 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
         </div>
       </div>
       <div class="rail" id="rail" tabindex="0" aria-label="Videos, swipe sideways for more" style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory">
-        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="#watch" class="vcard" data-cursor="Play" aria-label="Play Cool Widdit"><img src="img/v-coolwiddit.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">01</span><span class="vtag">New video</span></span><span class="vtext"><b>Cool Widdit</b><span>Moelogo · Can Never Miss · Track 5</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
-        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="#watch" class="vcard" data-cursor="Play" aria-label="Play Moon Dance"><img src="img/v-moondance.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">02</span><span class="vtag">Out now</span></span><span class="vtext"><b>Moon Dance</b><span>Moelogo · Can Never Miss EP</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
-        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="#watch" class="vcard" data-cursor="Play" aria-label="Play Visualiser"><img src="img/v-bench.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">03</span><span class="vtag">Visual</span></span><span class="vtext"><b>Visualiser</b><span>Moelogo · Can Never Miss era</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
-        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="#watch" class="vcard" data-cursor="Play" aria-label="Play Live on stage"><img src="img/v-lolo.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">04</span><span class="vtag">Live</span></span><span class="vtext"><b>Live on stage</b><span>Moelogo · Live performance</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
+        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="videos/moelogo-cool-widdit-music-video.mp4" class="vcard" data-video="videos/moelogo-cool-widdit-music-video.mp4" data-title="Cool Widdit" aria-label="Play Cool Widdit video"><img src="img/moelogo-cool-widdit-video-thumbnail.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">01</span><span class="vtag">New video</span></span><span class="vtext"><b>Cool Widdit</b><span>Moelogo · Can Never Miss · Track 5</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
+        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="videos/moelogo-moon-dance-can-never-miss.mp4" class="vcard" data-video="videos/moelogo-moon-dance-can-never-miss.mp4" data-title="Moon Dance" aria-label="Play Moon Dance video"><img src="img/moelogo-moon-dance-video-thumbnail.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">02</span><span class="vtag">Out now</span></span><span class="vtext"><b>Moon Dance</b><span>Moelogo · Can Never Miss EP</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
+        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="videos/moelogo-poseidons-love-visualiser.mp4" class="vcard" data-video="videos/moelogo-poseidons-love-visualiser.mp4" data-title="Poseidon’s Love" aria-label="Play Poseidon’s Love video"><img src="img/moelogo-poseidons-love-visualiser-thumbnail.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">03</span><span class="vtag">Visual</span></span><span class="vtext"><b>Poseidon’s Love</b><span>Moelogo · Can Never Miss · Visualiser</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
+        <div style="flex: 0 0 300px; scroll-snap-align: start"><a href="videos/moelogo-ireti-live-performance.mp4" class="vcard" data-video="videos/moelogo-ireti-live-performance.mp4" data-title="Ireti" aria-label="Play Ireti video"><img src="img/moelogo-ireti-live-performance-thumbnail.webp" alt=""><span class="vshade" aria-hidden="true"></span><span class="vtop"><span class="vnum">04</span><span class="vtag">Live</span></span><span class="vtext"><b>Ireti</b><span>Moelogo · Live performance</span></span><span class="vplay" aria-hidden="true"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M1 1.5v13L13 8z" fill="#0D0912"/></svg></span></a></div>
       </div>
     <p class="swipe-hint">SWIPE FOR MORE VIDEOS →</p></div>
   </section>
@@ -286,19 +297,33 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
     <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 32px">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
         <h2 style="margin: 0; font: 900 clamp(48px, 7vw, 96px)/.9 var(--f-display); letter-spacing: -.03em">IN THE ROOM</h2>
-        <p style="margin: 0; max-width: 40ch; font: 500 15px/1.6 var(--f-body); color: #B3AABF">Studio sessions, styling, red carpets and the Yorùbá Healer merch. Moments from the road with Moelogo.</p>
+        <p style="margin: 0; max-width: 40ch; font: 500 15px/1.6 var(--f-body); color: #B3AABF">Studio sessions, video shoots, tours and the people we build with. Moments from the road with Moelogo and zAA NurTy.</p>
+      </div>
+      <div role="group" aria-label="Filter photos" style="display: flex; flex-wrap: wrap; gap: 10px">
+        <button type="button" data-filter="all" aria-pressed="true" style="background: #FED70C; color: #0D0912; border: 1.5px solid #FED70C; border-radius: 999px; padding: 11px 18px; font: 700 13px/1 var(--f-body); cursor: pointer">All</button>
+        <button type="button" data-filter="moelogo" aria-pressed="false" style="background: transparent; color: #ffffff; border: 1.5px solid rgba(255,255,255,.4); border-radius: 999px; padding: 11px 18px; font: 700 13px/1 var(--f-body); cursor: pointer">Moelogo</button>
+        <button type="button" data-filter="zaa" aria-pressed="false" style="background: transparent; color: #ffffff; border: 1.5px solid rgba(255,255,255,.4); border-radius: 999px; padding: 11px 18px; font: 700 13px/1 var(--f-body); cursor: pointer">zAA NurTy</button>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); grid-auto-rows: 200px; grid-auto-flow: dense; gap: 14px">
-        <figure class="nx-zoom" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-ag.webp" alt="Moelogo with Adekunle Gold and a friend in black tie" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">With Adekunle Gold</figcaption></figure>
-        <figure class="nx-zoom" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-gingham.webp" alt="Moelogo seated in a blue gingham shirt" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
-        <figure class="nx-zoom" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-session.webp" alt="Moelogo in the studio with collaborators" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">Studio session</figcaption></figure>
-        <figure class="nx-zoom" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-mic.webp" alt="Moelogo singing into a microphone, black and white" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
-        <figure class="nx-zoom" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-redwall.webp" alt="Moelogo in sunglasses against a red wall" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block"></figure>
-        <figure class="nx-zoom" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-cowrie.webp" alt="Back of a jacket spelling Yorùbá Healer in cowrie shells" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #FED70C; color: #0D0912; border-radius: 8px; padding: 6px 10px; font: 700 12px/1.3 var(--f-body)">Yorùbá Healer merch</figcaption></figure>
-        <figure class="nx-zoom" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-tees.webp" alt="Yorùbá Healer tees laid out in many colours" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
-        <figure class="nx-zoom" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-stylist.webp" alt="A stylist adjusting Moelogo's hair" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
-        <figure class="nx-zoom" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-guitar.webp" alt="Moelogo passing a guitar in a studio" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
-        <figure class="nx-zoom" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/m-leather.webp" alt="Moelogo in a leather jacket and pink-tinted glasses" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-with-adekunle-gold.webp" alt="Moelogo with Adekunle Gold and a friend in black tie" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">With Adekunle Gold</figcaption></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-gingham-shirt-portrait.webp" alt="Moelogo seated in a blue gingham shirt" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-studio-session-collaborators.webp" alt="Moelogo in the studio with collaborators" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">Studio session</figcaption></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-live-performance-black-and-white.webp" alt="Moelogo singing into a microphone, black and white" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-red-carpet-portrait.webp" alt="Moelogo in sunglasses against a red wall" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/yoruba-healer-cowrie-shell-jacket-merch.webp" alt="Back of a jacket spelling Yorùbá Healer in cowrie shells" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #FED70C; color: #0D0912; border-radius: 8px; padding: 6px 10px; font: 700 12px/1.3 var(--f-body)">Yorùbá Healer merch</figcaption></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/yoruba-healer-merch-tees.webp" alt="Yorùbá Healer tees laid out in many colours" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-styling-session.webp" alt="A stylist adjusting Moelogo's hair" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-studio-session-guitar.webp" alt="Moelogo passing a guitar in a studio" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="moelogo" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/moelogo-leather-jacket-portrait.webp" alt="Moelogo in a leather jacket and pink-tinted glasses" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block"></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-with-femi-kuti.webp" alt="zAA NurTy with Femi Kuti in front of a colourful mural" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">With Femi Kuti</figcaption></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-with-bnxn.webp" alt="zAA NurTy with Bnxn on a leather sofa" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">With Bnxn</figcaption></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-red-corvette-shoot.webp" alt="zAA NurTy leaning on a red vintage Corvette" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-studio-portrait-microphone.webp" alt="zAA NurTy in the studio holding a vintage microphone" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">In the studio</figcaption></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-cervantes-masterpiece-denver.webp" alt="zAA NurTy outside Cervantes Masterpiece Ballroom, Denver" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">Cervantes, Denver</figcaption></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-boat-video-shoot.webp" alt="zAA NurTy on a boat during a music video shoot" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">Video shoot</figcaption></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-vintage-bmw.webp" alt="zAA NurTy at the wheel of a vintage BMW" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; grid-row: span 2; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-backstage-5ive-alive-tour.webp" alt="zAA NurTy backstage on the 5ive Alive tour" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; left: 10px; bottom: 10px; background: #0D0912; border-radius: 8px; padding: 6px 10px; font: 600 12px/1.3 var(--f-body)">Backstage, 5ive Alive tour</figcaption></figure>
+        <figure class="nx-zoom" data-artist="zaa" style="margin: 0; border-radius: 18px; overflow: hidden; position: relative"><img src="img/zaa-nurty-vintage-microphone-silhouette.webp" alt="Silhouette of zAA NurTy holding a vintage microphone" style="width: 100%; height: 100%; object-fit: cover; display: block"></figure>
       </div>
     </div>
   </section>
@@ -306,33 +331,54 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   <!-- EVENTS -->
   <section id="events" style="background: #FED70C; color: #0D0912; border-radius: 36px 36px 0 0; padding: 96px 0">
     <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 36px">
-      <h2 style="margin: 0; font: 900 clamp(48px, 7vw, 96px)/.9 var(--f-display); letter-spacing: -.03em">COMING UP</h2>
+      <h2 style="margin: 0; font: 900 clamp(48px, 7vw, 96px)/.9 var(--f-display); letter-spacing: -.03em">UPCOMING EVENTS</h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 20px">
-        <article class="ecard"><div class="ecard-img"><img src="img/m-field.webp" alt=""><div class="edate"><b>20</b><span>DEC 2026</span></div></div><div class="ecard-body"><span class="ecity">Lagos, Nigeria</span><h3>Moelogo: Yorùbá Healer Live</h3><p>Live music, culture and a merch pop-up<span>Guest performers announced</span></p><a href="https://moelogo.pv.pro/events/ylex" target="_blank" rel="noopener">Get tickets <span aria-hidden="true">›››</span></a></div></article>
-        <article class="ecard"><div class="ecard-img"><img src="img/z-dallas.webp" alt=""><div class="edate"><b>27</b><span>NOV 2026</span></div></div><div class="ecard-body"><span class="ecity">Richardson, Texas</span><h3>zAA NurTy live with Runtown</h3><p>Icon Restaurant &amp; Lounge, 720 E Campbell Rd<span>9:00 PM</span></p><a href="https://venuespice.com" target="_blank" rel="noopener">Tickets on Venuespice <span aria-hidden="true">›››</span></a></div></article>
+        <article class="ecard"><div class="ecard-img"><img src="img/moelogo-yoruba-healer-portrait-field.webp" alt=""><div class="edate"><b>20</b><span>DEC 2026</span></div></div><div class="ecard-body"><span class="ecity">Lagos, Nigeria</span><h3>Moelogo: Yorùbá Healer Live</h3><p>Live music, culture and a merch pop-up<span>Guest performers announced</span></p><a href="https://moelogo.pv.pro/events/ylex" target="_blank" rel="noopener">Get tickets <span aria-hidden="true">›››</span></a></div></article>
+        <article class="ecard"><div class="ecard-img"><img src="img/zaa-nurty-live-dallas-runtown.webp" alt=""><div class="edate"><b>27</b><span>NOV 2026</span></div></div><div class="ecard-body"><span class="ecity">Richardson, Texas</span><h3>zAA NurTy live with Runtown</h3><p>Icon Restaurant &amp; Lounge, 720 E Campbell Rd<span>9:00 PM</span></p><a href="https://venuespice.com" target="_blank" rel="noopener">Tickets on Venuespice <span aria-hidden="true">›››</span></a></div></article>
       </div>
     </div>
   </section>
 
   <!-- PRESS -->
-  <section aria-label="Press" style="background: #F3EEE4; color: #0D0912; padding: 96px 0">
-    <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: start">
-      <figure style="margin: 0; display: flex; flex-direction: column; gap: 20px">
-        <span aria-hidden="true" style="font: 900 96px/.6 var(--f-display); color: #5B2E90">“</span>
-        <blockquote style="margin: 0; font: 700 clamp(24px, 2.6vw, 34px)/1.3 var(--f-display); letter-spacing: -.01em">Moelogo is not easing into his next chapter. He is walking into it like somebody who has finally stopped second guessing the assignment.</blockquote>
-        <figcaption style="font: 600 13px/1 var(--f-body); letter-spacing: .16em; text-transform: uppercase"><a href="https://stankulture.com" style="color: #5B2E90">Stan Kulture ↗</a></figcaption>
-      </figure>
-      <div style="display: flex; flex-direction: column; gap: 14px">
-        <div style="background: #0D0912; color: #ffffff; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
-          <span style="font: 600 12px/1 var(--f-body); letter-spacing: .18em; color: #FED70C">BBC RADIO 1XTRA</span>
-          <b style="font: 800 28px/1.1 var(--f-display)">Track of the Week</b>
-          <span style="font: 500 15px/1.5 var(--f-body); color: #B3AABF">Moelogo, “Poseidon’s Love”, from <em>Can Never Miss</em>. Picked by Remi Burgz.</span>
+  <section id="press" aria-label="Press" style="background: #F3EEE4; color: #0D0912; padding: 96px 0">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+        <h2 style="margin: 0; font: 900 clamp(48px, 7vw, 96px)/.9 var(--f-display); letter-spacing: -.03em">IN THE PRESS</h2>
+        <p style="margin: 0; max-width: 40ch; font: 500 15px/1.6 var(--f-body); color: #4A4256">What Nigerian and international media are saying about our talents.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px">
+        <a href="https://www.thisdaylive.com/2026/11/10/moelogo-takes-yoruba-soul-to-hollywood-with-four-music-credits-on-children-of-blood-and-bone/" target="_blank" rel="noopener" style="background: #5B2E90; color: #ffffff; border-radius: 26px; padding: 36px; display: flex; flex-direction: column; gap: 18px">
+          <span aria-hidden="true" style="font: 900 96px/.5 var(--f-display); color: #FED70C; height: 44px">“</span>
+          <blockquote style="margin: 0; font: 800 clamp(24px, 2.6vw, 34px)/1.25 var(--f-display); letter-spacing: -.01em">The London based artist has written three soundtracks and contributed to the film’s score.</blockquote>
+          <span style="font: 600 13px/1.5 var(--f-body); color: #E9E1F4">ThisDay, on Moelogo’s four music credits on <em>Children of Blood and Bone</em> ↗</span>
+        </a>
+        <div style="display: grid; gap: 20px">
+          <div style="background: #0D0912; color: #ffffff; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="font: 600 12px/1 var(--f-body); letter-spacing: .18em; color: #FED70C">BBC RADIO 1XTRA</span>
+            <b style="font: 800 28px/1.1 var(--f-display)">Track of the Week</b>
+            <span style="font: 500 15px/1.5 var(--f-body); color: #B3AABF">Moelogo, “Poseidon’s Love”, from <em>Can Never Miss</em>. Picked by Remi Burgz.</span>
+          </div>
+          <a href="https://notjustok.com/songs/zaa-nurty-dangerous/" target="_blank" rel="noopener" style="background: #1B0E5C; color: #ffffff; border-radius: 26px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="font: 600 12px/1 var(--f-body); letter-spacing: .18em; color: #C8F23A">NOTJUSTOK ON “DANGEROUS”</span>
+            <b style="font: 800 24px/1.25 var(--f-display)">“Impulsive, intimate, provocative and completely unapologetic.”</b>
+          </a>
         </div>
-        <div style="border: 2px solid #0D0912; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
-          <span style="font: 600 12px/1 var(--f-body); letter-spacing: .18em; color: #5B2E90">ZAA NURTY · PRESS</span>
-          <b style="font: 800 24px/1.15 var(--f-display)">“Lagos Roots, Global Vision: Why ZAA Nurty Is Next”</b>
-          <span style="font: 500 14px/1.5 var(--f-body); color: #4A4256">Stan Kulture. Also featured in The Guardian Nigeria and Notjustok.</span>
-          <a href="https://zaanurty.com/press" style="color: #5B2E90; font: 700 14px/1 var(--f-body)">Read the press ↗</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px">
+        <div>
+          <h3 style="margin: 0 0 8px; font: 800 24px/1 var(--f-display)">Moelogo</h3>
+          <a href="https://www.thisdaylive.com/2026/11/10/moelogo-takes-yoruba-soul-to-hollywood-with-four-music-credits-on-children-of-blood-and-bone/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">ThisDay · 10 Nov 2026</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Moelogo Takes Yoruba Soul to Hollywood With Four Music Credits on Children of Blood and Bone</b></a>
+          <a href="https://pmnewsnigeria.com/2026/11/09/moelogo-set-to-illuminate-lagos-with-yoruba-healer-live-experience-this-december/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">PM News · 9 Nov 2026</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Moelogo Set to Illuminate Lagos With ‘Yorùbá Healer’ Live Experience This December</b></a>
+          <a href="https://guardian.ng/life/music/moelogo-to-headline-yoruba-healer-live-in-lagos/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">The Guardian Nigeria</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Moelogo to Headline Yorùbá Healer Live in Lagos</b></a>
+          <a href="https://stankulture.com/moelogo-announces-oladapo-dotti-the-deity-liya-and-more-for-yoruba-healer-live/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">Stan Kulture · 25 Oct 2026</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Moelogo Announces OLADAPO, DOTTi The Deity, LIYA and More for ‘Yorùbá Healer Live’</b></a>
+          <a href="https://stankulture.com/moelogo-turned-the-healer-into-a-party-a-surprise-drop-underway-and-it-is-pure-afterdark-vibes/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">Stan Kulture · 6 Oct 2026</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Moelogo Turned The Healer Into A Party: A Surprise Drop Underway And It Is Pure AfterDark Vibes</b></a>
+        </div>
+        <div>
+          <h3 style="margin: 0 0 8px; font: 800 24px/1 var(--f-display)">zAA NurTy</h3>
+          <a href="https://notjustok.com/songs/zaa-nurty-dangerous/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">Notjustok · 18 Aug 2026</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">ZAA Nurty Unleashes A More Fearless Side With New Single “Dangerous”</b></a>
+          <a href="https://guardian.ng/saturday-magazine/weekend-beats/zaa-nurty-signals-new-chapter-with-cryptic-teasers/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">The Guardian Nigeria</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Zaa Nurty Signals New Chapter With Cryptic Teasers</b></a>
+          <a href="https://guardian.ng/art/zaa-nurtys-with-love-zaa-always-a-journey-through-life-love-and-lagos-rhythms/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">The Guardian Nigeria</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Zaa Nurty’s “With Love, Zaa Always”: A Journey Through Life, Love and Lagos Rhythms</b></a>
+          <a href="https://notjustok.com/songs/afronext/could-zaa-be-the-next/" target="_blank" rel="noopener" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(13,9,18,.16); color: #0D0912"><span style="font: 600 11px/1.4 var(--f-body); letter-spacing: .14em; text-transform: uppercase; color: #5B2E90">Notjustok · 11 Oct 2025</span><span aria-hidden="true" style="grid-row: span 2; font: 700 18px/1 var(--f-body); color: #5B2E90">↗</span><b style="font: 700 17px/1.35 var(--f-display); text-wrap: balance">Discover New Artist: Could ZAA Be The Next?</b></a>
         </div>
       </div>
     </div>
@@ -340,7 +386,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
 
   <!-- CONSULTATION CTA -->
   <section id="contact" style="background: #5B2E90; padding: 110px 0; position: relative; overflow: hidden">
-    <img src="img/logo-chev-yellow.png" alt="" aria-hidden="true" style="position: absolute; right: -60px; bottom: -40px; width: 520px; opacity: .12; transform: rotate(-8deg)">
+    <img src="img/nxt5yrs-lagos-chevron-logo.png" alt="" aria-hidden="true" style="position: absolute; right: -60px; bottom: -40px; width: 520px; opacity: .12; transform: rotate(-8deg)">
     <div style="position: relative; max-width: 1320px; margin: 0 auto; padding: 0 32px; display: flex; flex-direction: column; gap: 28px; align-items: flex-start">
       <p style="margin: 0; font: 600 12px/1 var(--f-body); letter-spacing: .22em; color: #FED70C">FOR ARTISTS, CREATIVES AND BRANDS</p>
       <h2 style="margin: 0; max-width: 14ch; font: 900 clamp(48px, 7vw, 104px)/.92 var(--f-display); letter-spacing: -.03em; text-wrap: balance">Your next five years start here.</h2>
@@ -360,7 +406,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   <!-- FOOTER -->
   <footer style="background: #0D0912; border-top: 1px solid rgba(255,255,255,.14)">
     <div style="max-width: 1320px; margin: 0 auto; padding: 56px 32px 40px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-end">
-      <img src="img/logo-stack-white.png" alt="NXT5YRS Lagos" style="width: 180px; height: auto">
+      <img src="img/nxt5yrs-lagos-logo-white.png" alt="NXT5YRS Lagos" style="width: 180px; height: auto">
       <div style="display: flex; flex-wrap: wrap; gap: 48px; font: 500 14px/1.9 var(--f-body)">
         <div style="display: flex; flex-direction: column"><b style="font: 600 11px/2 var(--f-body); letter-spacing: .18em; color: #C4952D">ROSTER</b><a href="https://www.instagram.com/moelogo" style="color: #ffffff">Moelogo</a><a href="https://www.instagram.com/zaanurty/" style="color: #ffffff">zAA NurTy</a></div>
         <div style="display: flex; flex-direction: column"><b style="font: 600 11px/2 var(--f-body); letter-spacing: .18em; color: #C4952D">CONTACT</b><span>socialprefect@nxt5yrs.com</span><a href="https://www.instagram.com/nxt5yrslagos" style="color: #ffffff">@nxt5yrslagos</a></div>
@@ -373,6 +419,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   </footer>
 </div>
 <div class="cursor" id="cursor" aria-hidden="true"><i></i><span>Play</span></div>
+<dialog class="vmodal" id="vmodal" aria-label="Video player"><div style="position:relative"><button class="vclose" type="button" aria-label="Close video">✕</button><video id="vplayer" controls playsinline preload="none"></video><p class="vtitle" id="vtitle"></p></div></dialog>
 <script>
 (function(){
 var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -383,16 +430,28 @@ function onScroll(){var y=scrollY;
  if(!reduce)tracks.forEach(function(t){var w=t.scrollWidth/6,d=+t.dataset.dir,x=(y*0.6)%w;t.style.transform='translateX('+(d>0?-x:x-w)+'px)';});}
 addEventListener('scroll',function(){requestAnimationFrame(onScroll)},{passive:true});onScroll();
 var rail=document.getElementById('rail');
-document.querySelectorAll('[data-dir]').forEach(function(b){if(b.tagName==='BUTTON')b.addEventListener('click',function(){rail.scrollBy({left:+b.dataset.dir*rail.clientWidth*0.8,behavior:reduce?'auto':'smooth'})})});
+document.querySelectorAll('button[data-dir]').forEach(function(b){b.addEventListener('click',function(){rail.scrollBy({left:+b.dataset.dir*rail.clientWidth*0.8,behavior:reduce?'auto':'smooth'})})});
 var c=document.getElementById('cursor');
 if(matchMedia('(pointer:fine)').matches){var x=0,y=0,tx=0,ty=0;
  addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY;c.classList.toggle('on',!!e.target.closest('.vcard'))});
  (function loop(){x+=(tx-x)*(reduce?1:.2);y+=(ty-y)*(reduce?1:.2);c.style.transform='translate('+x+'px,'+y+'px)';requestAnimationFrame(loop)})();}
+var m=document.getElementById('vmodal'),pl=document.getElementById('vplayer'),vt=document.getElementById('vtitle');
+document.querySelectorAll('.vcard[data-video]').forEach(function(a){a.addEventListener('click',function(e){
+ if(!m.showModal)return; e.preventDefault(); pl.src=a.dataset.video; vt.textContent=a.dataset.title; m.showModal(); pl.play().catch(function(){});});});
+function closeV(){pl.pause();pl.removeAttribute('src');pl.load();if(m.open)m.close();}
+m.querySelector('.vclose').addEventListener('click',closeV);
+m.addEventListener('click',function(e){if(e.target===m)closeV()});
+m.addEventListener('close',function(){pl.pause()});
+var fb=document.querySelectorAll('[data-filter]'),figs=document.querySelectorAll('[data-artist]');
+fb.forEach(function(b){b.addEventListener('click',function(){var f=b.dataset.filter;
+ fb.forEach(function(o){var on=o===b;o.setAttribute('aria-pressed',on);o.style.background=on?'#FED70C':'transparent';o.style.color=on?'#0D0912':'#ffffff';o.style.borderColor=on?'#FED70C':'rgba(255,255,255,.4)';});
+ figs.forEach(function(g){g.classList.toggle('is-hidden',f!=='all'&&g.dataset.artist!==f)});});});
 var cd=document.querySelector('[aria-label="Countdown to the show"]');
 if(cd){var bs=cd.querySelectorAll('b'),T=new Date('2026-12-20T18:00:00+01:00').getTime();
  function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));var v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60)];for(var k=0;k<3;k++)bs[k].textContent=String(v[k]).padStart(2,'0')}
  tick();setInterval(tick,30000);}
 })();
 </script>
+
 </body>
 </html>
