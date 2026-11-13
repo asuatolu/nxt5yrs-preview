@@ -98,6 +98,10 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   #roster article > div > div{padding:24px !important}
   #roster article > div > div[style*="min-height: 560px"]{min-height:340px !important;padding:0 !important}
   .tape-item{font-size:22px}
+  [aria-label="Countdown to the show"]{gap:8px !important}
+  [aria-label="Countdown to the show"] > div:not(:last-child){flex:1 1 0;min-width:0 !important;padding:10px 4px !important}
+  [aria-label="Countdown to the show"] b{font-size:30px !important}
+  [aria-label="Countdown to the show"] > div:last-child{flex-basis:100%;padding-left:0 !important}
   .rail > div{flex:0 0 76% !important}
   #watch .rail{padding-right:16px}
   .swipe-hint{display:flex;align-items:center;gap:10px;font:600 12px/1 var(--f-body);letter-spacing:.12em;color:#B3AABF}
@@ -246,6 +250,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
             <div style="background: #0D0912; border-radius: 14px; padding: 12px 16px; min-width: 76px; text-align: center"><b style="display: block; font: 900 38px/1 var(--f-display); color: #FED70C; font-variant-numeric: tabular-nums">40</b><small style="font: 600 10px/1.6 var(--f-body); letter-spacing: .12em">DAYS</small></div>
             <div style="background: #0D0912; border-radius: 14px; padding: 12px 16px; min-width: 76px; text-align: center"><b style="display: block; font: 900 38px/1 var(--f-display); color: #FED70C; font-variant-numeric: tabular-nums">06</b><small style="font: 600 10px/1.6 var(--f-body); letter-spacing: .12em">HOURS</small></div>
             <div style="background: #0D0912; border-radius: 14px; padding: 12px 16px; min-width: 76px; text-align: center"><b style="display: block; font: 900 38px/1 var(--f-display); color: #FED70C; font-variant-numeric: tabular-nums">12</b><small style="font: 600 10px/1.6 var(--f-body); letter-spacing: .12em">MINS</small></div>
+            <div style="background: #0D0912; border-radius: 14px; padding: 12px 16px; min-width: 76px; text-align: center"><b style="display: block; font: 900 38px/1 var(--f-display); color: #FED70C; font-variant-numeric: tabular-nums">45</b><small style="font: 600 10px/1.6 var(--f-body); letter-spacing: .12em">SECS</small></div>
             <div style="display: flex; flex-direction: column; justify-content: center; padding-left: 8px; font: 700 14px/1.4 var(--f-body)">Sun 20 Dec 2026<span style="color: #B3AABF; font-weight: 500">Lagos</span></div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 10px">
@@ -520,8 +525,8 @@ fb.forEach(function(b){b.addEventListener('click',function(){var f=b.dataset.fil
  figs.forEach(function(g){g.classList.toggle('is-hidden',f!=='all'&&g.dataset.artist!==f)});});});
 var cd=document.querySelector('[aria-label="Countdown to the show"]');
 if(cd){var bs=cd.querySelectorAll('b'),T=new Date('2026-12-20T18:00:00+01:00').getTime();
- function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));var v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60)];for(var k=0;k<3;k++)bs[k].textContent=String(v[k]).padStart(2,'0')}
- tick();setInterval(tick,30000);}
+ function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));var v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];for(var k=0;k<bs.length&&k<4;k++)bs[k].textContent=String(v[k]).padStart(2,'0')}
+ tick();setInterval(tick,1000);}
 })();
 </script>
 

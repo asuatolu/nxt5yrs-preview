@@ -87,6 +87,10 @@ a:focus-visible,button:focus-visible{outline:2px solid #FED70C;outline-offset:3p
   #roster article > div > div{padding:24px !important}
   #roster article > div > div[style*="min-height: 560px"]{min-height:340px !important;padding:0 !important}
   .tape-item{font-size:22px}
+  [aria-label="Countdown to the show"]{gap:8px !important}
+  [aria-label="Countdown to the show"] > div:not(:last-child){flex:1 1 0;min-width:0 !important;padding:10px 4px !important}
+  [aria-label="Countdown to the show"] b{font-size:30px !important}
+  [aria-label="Countdown to the show"] > div:last-child{flex-basis:100%;padding-left:0 !important}
   .rail > div{flex:0 0 76% !important}
   #watch .rail{padding-right:16px}
   .swipe-hint{display:flex;align-items:center;gap:10px;font:600 12px/1 var(--f-body);letter-spacing:.12em;color:#B3AABF}
